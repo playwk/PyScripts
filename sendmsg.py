@@ -42,7 +42,7 @@ class SendMsg:
         return data.encode('gb2312')
 
     def send(self):
-        address = ('198.203.209.203', 9901)
+        address = ('192.168.20.203', 9901)
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client.connect(address)
         self.trans()
